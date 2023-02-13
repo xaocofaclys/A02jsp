@@ -25,9 +25,9 @@ public class App
         SessionFactory sessionFactory=cfg.buildSessionFactory();
         
         Student st=new Student();
-        st.setId(121);
-        st.setName("Gautam");
-        st.setCity("Sikkim");
+        st.setId(120011);
+        st.setName("Shubham");
+        st.setCity("Gangtok");
         System.out.println(st);
         
         Session session=sessionFactory.openSession();
@@ -38,7 +38,7 @@ public class App
         
         tx.commit();
         session.close();
-        System.out.println("Create Done");
+        System.out.println("Succesfully Created ");
         
     }
 }
